@@ -7,6 +7,8 @@ public class OldestUser {
         int firstUserAge;
         int secondUserAge;
 
+        int variabile = 1; 
+
         Scanner input = new Scanner(System.in);
         
         System.out.println("Enter your first user age: ");
@@ -17,6 +19,7 @@ public class OldestUser {
         input.close();
 
         String message;
+
 
         if (firstUserAge > secondUserAge){
             message = "First user, -" + firstUserAge + "- is the oldest";

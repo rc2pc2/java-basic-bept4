@@ -8,6 +8,8 @@ public class LongestWord {
         String secondUserWord;
 
         Scanner input = new Scanner(System.in);
+        // String stringa = " dwd wd w " + 3; // " dwd wd w 3"  ==> cast implicito -> conversione da un tipo ad un altro in modo implicito
+        // int somma = Integer.parseInt(" dwd wd w ") + 3; //$  ==> cast esplicito -> conversione da un tipo ad un altro in modo esplcito
         
         System.out.println("Enter your first word: ");
         firstUserWord = input.nextLine();
@@ -25,6 +27,7 @@ public class LongestWord {
         } else {
             message = "The given words share the same length!";
         }
+
 
         System.out.println(message);
     }

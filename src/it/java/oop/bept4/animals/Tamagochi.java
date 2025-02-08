@@ -17,6 +17,6 @@ public class Tamagochi implements Pet {
 
     @Override
     public String parla() {
-        return "beep beep beep";
+        return "non mi piace parlare...";
     }
 }

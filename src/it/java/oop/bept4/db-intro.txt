@@ -1,0 +1,37 @@
+DATABASE:
+
+
+Nome tabella: books
+
+id                  MEDIUMINT  UNSIGNED     NOT_NULL        AUTOINCREMENT       PRIMARY_KEY   [UNIQUE]
+genre               VARCHAR(100)            NOT_NULL        
+title               VARCHAR(255)            NOT_NULL        
+author              VARCHAR(255)            NULL
+series              VARCHAR(100)            NULL
+plot                TEXT                    NULL
+n_pages             SMALLINT    UNSIGNED    NOT_NULL
+is_available        BOOLEAN                 NOT_NULL        DEFAULT(true)
+language            VARCHAR(10)             NOT_NULL
+publisher           VARCHAR(100)            NULL
+publication_date    DATE                    NULL
+print_year          YEAR                    NOT_NULL
+cover_type          VARCHAR(100)            NOT_NULL
+cover_image_url     TEXT                    NULL
+room                TINYINT     UNSIGNED    NULL
+position            SMALLINT    UNSIGNED    NULL
+notes               TEXT                    NULL
+
+
+esempio di valori decimali:
+    9999,99 FLOAT(6,2)
+    333,33333 FLOAT(8,5)
+
+
+
+    id  nome cognome ruolo
+    1   geena ginetti supervisore
+    2   francy lorelli dipendente
+
+
+
+    Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
